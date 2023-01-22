@@ -1,7 +1,7 @@
 {
     "intents": [
         {
-            "tag": "greeting",
+            "tag": "hello",
             "patterns": [
                 "Hi there",
                 "How are you",
@@ -9,6 +9,8 @@
                 "Hey",
                 "Good day",
                 "Namaste",
+                "hello",
+                "hi",
                 "yo"
             ],
             "responses": [
@@ -160,7 +162,7 @@
                 "this is not working"
             ],
             "responses": [
-                "Try to see if you can troubleshoot by finding a resource online. Otherwise, contact your supervisor."
+                "What do you need help in?"
             ]
         },
         {
@@ -183,7 +185,8 @@
                 "doing fine",
                 "I am happy",
                 "everything is good",
-                "Onboarding is smooth"
+                "Onboarding is smooth",
+                "I am great"
             ],
             "responses": [
                 "That's great to hear!"
@@ -200,7 +203,9 @@
                 "everything is bad",
                 "Onboarding is rough",
                 "onboarding is hard",
-                "I am sad"
+                "I am sad",
+                "I am upset",
+                "I am unhappy"
             ],
             "responses": [
                 "That is not good. We'll take note and try to help you."
@@ -213,68 +218,34 @@
                 "who is my manager",
                 "team information",
                 "who is my supervisor",
-                "who is the head of the web development team"
+                "who is the manager of the web development team"
             ],
             "responses": [
-                "Your team consists of"
+                "Your team consists of Jack (manager/supervisor), Sarah (data scientist), Mike (software engineer) & yourself (web developer)."
             ]
         },
         
         {
-            "tag": "weather",
+            "tag": "name",
             "patterns": [
-                "temperature",
-                "weather",
-                "how hot is it"
+                "what is your name",
+                "who are you",
+                "what should I call you",
+                "can you tell me your name"
             ],
             "responses": [
-                "..."
+                "I am Gini, your onboarding companion. I will help you get setup at Gsoft and will always be available for the next few days"
             ]
         },
         {
-            "tag": "karan",
+            "tag": "created",
             "patterns": [
-                "who is he",
-                "who is that",
-                "who is karan",
-                "karan malik"
+                "who created you",
+                "who built you",
+                "how were you born"
             ],
             "responses": [
-                "Head over to his any of his social profiles to find out! Linkedin: www.linkedin.com/in/karan-malik-3a39191a7 Github: https://github.com/Karan-Malik"
-            ]
-        },
-        {
-            "tag": "contact",
-            "patterns": [
-                "contact developer",
-                "contact karan",
-                "contact programmer",
-                "contact creator"
-            ],
-            "responses": [
-                "You can contact my creator at his Linkedin profile : www.linkedin.com/in/karan-malik-3a39191a7"
-            ]
-        },
-        {
-            "tag": "appreciate",
-            "patterns": [
-                "You are awesome",
-                "you are the best",
-                "you are great",
-                "you are good"
-            ],
-            "responses": [
-                "Thank you!"
-            ]
-        },
-        {
-            "tag": "nicetty",
-            "patterns": [
-                "it was nice talking to you",
-                "good talk"
-            ],
-            "responses": [
-                "It was nice talking to you as well! Come back soon!"
+                "I was built by Ahsan, Pooja, Srivatsan and Hussam to compete in Concordia Univesity's hackathon."
             ]
         },
         {
@@ -285,51 +256,6 @@
             ],
             "responses": [
                 "ok"
-            ]
-        },
-        {
-            "tag": "news",
-            "patterns": [
-                "news",
-                "latest news",
-                "india news"
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
-            "tag": "inspire",
-            "patterns": [
-                "who inspires you",
-                "who is your inspiration",
-                "who motivates you"
-            ],
-            "responses": [
-                "Personally, I find Karan very inspiring. I might not be very fair though.."
-            ]
-        },
-        {
-            "tag": "cricket",
-            "patterns": [
-                "current cricket matches",
-                "cricket score"
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
-            "tag": "song",
-            "patterns": [
-                "top songs",
-                "best songs",
-                "hot songs",
-                " top 10 songs",
-                "top ten songs"
-            ],
-            "responses": [
-                "..."
             ]
         },
         {
@@ -345,51 +271,12 @@
             ]
         },
         {
-            "tag": "timer",
-            "patterns": [
-                "set a timer"
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
-            "tag": "covid19",
-            "patterns": [
-                "covid 19 "
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
             "tag": "suggest",
             "patterns": [
                 "you are useless","useless","suggest","suggestions","you are bad"
             ],
             "responses": [
-                "Please mail your suggestions to ted.thedlbot.suggestions@gmail.com. Thank you for helping me improve!"
-            ]
-        },
-            {"tag": "riddle",
-            "patterns": [
-                "Ask me a riddle",
-                "Ask me a question",
-                "Riddle"
-            ],
-            "responses": [
-                "What two things can you never eat for breakfast?.....Lunch and Dinner!",
-                "What word is spelled incorrectly in every single dictionary?.....Incorrectly",
-                " How can a girl go 25 days without sleep?.....She sleeps and night!",
-                "How do you make the number one disappear?.....Add the letter G and it’s 'gone'!",
-                " What will you actually find at the end of every rainbow?.....The letter 'w'",
-                "What can be caught but never thrown?.....A cold!",
-                "What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
-                " What 5-letter word becomes shorter when you add two letters to it?.....Short",
-                "Why can't a bike stand on it's own?.....It is two-tired."
-            ],
-            "context": [
-                "riddles"
+                "Please mail your suggestions to gini-bot@gmail.com. Thank you for helping me improve!"
             ]
         },
         {
@@ -398,7 +285,25 @@
                 "how old are you","when were you made","what is your age"
             ],
             "responses": [
-                "I was made in 2020, if that's what you are asking!"
+                "I was made in 2023, if that's what you are asking!"
+            ]
+        },
+        {
+            "tag": "next meeting",
+            "patterns": [
+                "when is my next meeting","next task","what time is meeting"
+            ],
+            "responses": [
+                "Check the calender on the side of the assistant application."
+            ]
+        },
+        {
+            "tag": "company",
+            "patterns": [
+                "what company do we work for","this company"
+            ],
+            "responses": [
+                "Gsoft"
             ]
         }
     ]
