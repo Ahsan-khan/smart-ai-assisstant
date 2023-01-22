@@ -23,12 +23,12 @@
             ]
         },
         {
-            "tag": "goodbye",
+            "tag": "bye",
             "patterns": [
-                "Bye",
+                "bye",
                 "See you later",
-                "Goodbye",
-                "Get lost",
+                "goodbye",
+                "get lost",
                 "Till next time",
                 "bbye"
             ],
@@ -65,7 +65,10 @@
 		"I am unable to attend this meeting",
                 "this time doesnt work for me",
                 "I cannot attend",
-		"I will miss the meeting"
+		"I will miss the meeting",
+        "I cant attend",
+        "I will not attend",
+        "I wont attend the meeting"
 	],
             "responses": ["Okay, we will send a note to reschedule meeting."
                 
@@ -77,9 +80,11 @@
         {
             "tag": "can attend meeting",
             "patterns": [
-		"yes I can make it",
+		        "yes I can make it",
                 "I will attend",
-                "I can attend"
+                "I can attend",
+                "I will attend the meeting",
+                "I am going to attend"
 	],
             "responses": ["Okay great, your team will see you there!"
                 
@@ -171,7 +176,8 @@
                 "I can not setup my slack account",
                 "slack not working",
                 "I am having trouble setting up my slack",
-                "something is wrong with slack"
+                "something is wrong with slack",
+                "Slack is not working"
             ],
             "responses": [
                 "Visit https://slack.com/help/categories/360000049043 to help you get started with slack."
@@ -186,7 +192,9 @@
                 "I am happy",
                 "everything is good",
                 "Onboarding is smooth",
-                "I am great"
+                "I am great",
+                "im good",
+                "im fine"
             ],
             "responses": [
                 "That's great to hear!"
@@ -205,7 +213,9 @@
                 "onboarding is hard",
                 "I am sad",
                 "I am upset",
-                "I am unhappy"
+                "I am unhappy",
+                "im upset",
+                "im sad"
             ],
             "responses": [
                 "That is not good. We'll take note and try to help you."
@@ -264,7 +274,7 @@
                 "i am good",
                 "I'm good",
                 "i am fine",
-                " i'm fine","good"
+                "i'm fine","good"
             ],
             "responses": [
                 "Good to know!"
@@ -304,6 +314,60 @@
             ],
             "responses": [
                 "Gsoft"
+            ]
+        },
+        {
+            "tag": "ticket",
+            "patterns": [
+                "start ticket",
+                "jira ticket"
+            ],
+            "responses": [
+                "This feature will be availble in Gini 2.0"
+            ]
+        },
+        {
+            "tag": "ok",
+            "patterns": [
+                "ok",
+                "okay",
+                "fine"
+            ],
+            "responses": [
+                "Great!"
+            ]
+        },
+        {
+            "tag": "how did meeting go",
+            "patterns": [
+                "meeting went well",
+                "meeting was fine",
+                "Meeting fine"
+
+            ],
+            "responses": [
+                "Okay, good to know."
+            ]
+        },
+        {
+            "tag": "   ",
+            "patterns": [
+                "  "
+            ],
+            "responses": [
+                "Enter some text."
+            ]
+        },
+        {
+            "tag": "How are you",
+            "patterns": [
+                "how is it going",
+                "how are you doing",
+                "are you okay"
+
+            ],
+            "responses": [
+                "I am doing fine, thanks for asking."
             ]
         }
     ]
